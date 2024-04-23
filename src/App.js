@@ -1,15 +1,19 @@
+import React from 'react';
 import {
   BrowserRouter,
   Routes,
   Route,
 } from 'react-router-dom';
 
-import Home from '../src/routes/Home';
-import About from '../src/routes/About';
+import About from './routes/About';
+import Home from './routes/Home';
+import Detail from './routes/Detail';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
     <BrowserRouter>
+      <Navigation />
       <Routes>
         <Route
           path="/"
@@ -21,6 +25,12 @@ function App() {
           path="/about"
           element={
             <About />
+          }
+        />
+        <Route
+          path="/movie-detail"
+          element={
+            <Detail />
           }
         />
       </Routes>

@@ -1,9 +1,12 @@
-import React from "react";
 
-function About() {
+function About(props) {
+  console.log(props);
   return (
     <span>
-      ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅇ
+      제발
+      쫌
+      나와라
+      진짜로로오오오오오
     </span>
   );
 }
