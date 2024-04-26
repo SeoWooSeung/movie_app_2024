@@ -1,13 +1,5 @@
-function Detail({
-  location,
-}) {
-
-  );
-  return (
-    <span>
-      hello
-    </span>
-  );
+function Detail({ location }) {
+    return <span>hello</span>;
 }
 
 export default Detail;
